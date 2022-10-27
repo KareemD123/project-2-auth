@@ -1,0 +1,17 @@
+<h1>This is my favorite pokemon list!</h1>
+
+
+
+
+<% userPokemons.forEach(p => { %>
+
+<a href="/pokemon/<%= p.id %>">
+<h3><%= p.name %></h3>
+</a>
+
+
+<form method="POST" action="/pokemon/<%= p.id %>?_method=DELETE">
+    <button type="submit">delete</button>
+</form>
+
+<% })  %>

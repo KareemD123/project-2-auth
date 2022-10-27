@@ -1,0 +1,15 @@
+<h1>This is my Pokemon Home.ejs</h1>
+
+<%= message %>
+
+<%   pokemons.forEach(p => {   %>
+
+    <form action="/pokemon/new" method="POST">
+        <input type="hidden" value="<%= p.name %>" name="name">
+        <button type="submit"><%=  p.name  %></button>
+    </form>
+    
+
+<%     })    %>
+
+
