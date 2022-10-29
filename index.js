@@ -41,6 +41,8 @@ app.get('/', (req, res)=>{
     res.render('home')
 })
 
-app.listen(8000, ()=>{
+const PORT = process.env.PORT || 8080
+
+app.listen(PORT, ()=>{
     console.log('Project 2 Express Authentication')
 })
